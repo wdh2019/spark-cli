@@ -27,3 +27,10 @@ pnpm run test-mac-g
 创建package.json
 
 安装依赖
+
+
+## 提示
+
+本cli的所有关键代码都在bin目录下
+
+参考视频：https://www.bilibili.com/video/BV1jK4y197Ne

@@ -4,8 +4,16 @@
   "description": "frontend cli",
   "type": "module",
   "main": "index.js",
+  "bin": "./bin/index.js",
+  "files": [
+    "bin",
+    "README.md"
+  ],
   "scripts": {
-    "test": "rmdir /S my-project && node index.js"
+    "test-mac": "rm -rf my-project && node ./bin/index.js",
+    "test-win": "rmdir /s/q my-project && node ./bin/index.js",
+    "test-mac-g": "npm link && rm -rf my-project && spark-cli",
+    "test-win-g": "npm link && rmdir /s/q my-project && spark-cli"
   },
   "repository": {
     "type": "git",
@@ -21,6 +29,10 @@
   },
   "homepage": "https://github.com/wdh2019/spark-cli#readme",
   "dependencies": {
-    "ejs": "^3.1.10"
+    "chalk": "^5.3.0",
+    "ejs": "^3.1.10",
+    "execa": "^9.4.0",
+    "inquirer": "^11.1.0",
+    "prettier": "^3.3.3"
   }
 }

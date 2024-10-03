@@ -2,6 +2,20 @@
 
 测试项目：用node构建一个可以构建前端项目的cli
 
+## 运行
+
+如果你是windows系统
+
+```bash
+pnpm run test-win-g
+```
+
+如果你是mac系统
+
+```bash
+pnpm run test-mac-g
+```
+
 ## cli构建项目的步骤
 
 创建项目文件夹
